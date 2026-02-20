@@ -1,9 +1,6 @@
 # Crypt-PBKDF2-AES-app-Desktop
 Aplicativo desktop para criptografia de arquivos usando AES e derivação de chave via PBKDF2, desenvolvido com Flask e PyWebView.
 
-
-SecureVault Desktop é um aplicativo desktop leve para criptografia e descriptografia segura de arquivos, utilizando padrões modernos de criptografia.
-
 Desenvolvido com Flask e PyWebView, o sistema funciona como um aplicativo nativo, sem barra de navegador.
 
 ---
@@ -45,6 +42,6 @@ Isso garante:
 - Isolamento por arquivo
 - Integridade e autenticação via Fernet
 
-ATENÇÃO: Sem a senha correta, o arquivo não pode ser recuperado.
+ATENÇÃO: SEM A SENHA CORRETA, O ARQUIVO NÃO PODE SER RECUPERADO. (não vá testar com documentos importantes e esqquecer a senha)
 
 Ficarei muito feliz se você modificar o projeto, por favor caompartilhe comigo.
