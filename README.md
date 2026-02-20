@@ -18,13 +18,6 @@ Desenvolvido com Flask e PyWebView, o sistema funciona como um aplicativo nativo
 
 ---
 
-- Python 3.13
-- Flask
-- PyWebView
-- Cryptography (AES + PBKDF2)
-
----
-
 ## Modelo de Segurança
 
 Ao criptografar um arquivo:
