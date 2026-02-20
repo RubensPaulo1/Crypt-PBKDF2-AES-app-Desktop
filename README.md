@@ -28,7 +28,6 @@ Ao criptografar um arquivo:
 
 Isso garante:
 
-- Ausência de chave fixa
 - Proteção contra ataques de força bruta
 - Isolamento por arquivo
 - Integridade e autenticação via Fernet
