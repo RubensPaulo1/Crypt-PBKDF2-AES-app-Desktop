@@ -42,6 +42,6 @@ Isso garante:
 - Isolamento por arquivo
 - Integridade e autenticação via Fernet
 
-ATENÇÃO: SEM A SENHA CORRETA, O ARQUIVO NÃO PODE SER RECUPERADO. (não vá testar com documentos importantes e esqquecer a senha)
+ATENÇÃO: SEM A SENHA CORRETA, O ARQUIVO NÃO PODE SER RECUPERADO. (não vá testar com documentos importantes e esquecer a senha)
 
-Ficarei muito feliz se você modificar o projeto, por favor caompartilhe comigo.
+Ficarei muito feliz se você modificar o projeto, por favor compartilhe comigo o resultado.
