@@ -5,7 +5,7 @@ Desenvolvido com Flask e PyWebView, o sistema funciona como um aplicativo nativo
 
 ---
 
-##Funcionalidades
+## Funcionalidades
 
 - Criptografia AES (via Fernet)
 - Derivação de chave baseada em senha (PBKDF2)
