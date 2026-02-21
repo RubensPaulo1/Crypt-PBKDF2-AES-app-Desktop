@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>App</h1>
+
+        <button onclick="selectFile()">Selecionar Arquivo</button>
+        <p id="file-name">Nenhum arquivo selecionado</p>
+
+        <input type="password" id="password" placeholder="Digite sua senha">
+        <small id="strength"></small>
+
+        <button onclick="encrypt()">Criptografar</button>
+        <button onclick="decrypt()">Descriptografar</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+<script>
+    function selectFile() {
+        window.pywebview.api.select_file().then(response => {
+            if (response) {
+                document.getElementById("file-name").innerText = response;
+            }
+        });
+    }
+
+    function encrypt() {
+        const password = document.getElementById("password").value;
+        window.pywebview.api.encrypt(password).then(showResult);
+    }
+
+    function decrypt() {
+        const password = document.getElementById("password").value;
+        window.pywebview.api.decrypt(password).then(showResult);
+    }
+
+    function showResult(response) {
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerText = response.message;
+        resultDiv.className = response.status === "success" ? "success" : "error";
+    }
+
+    // Medidor simples de força da senha
+    document.getElementById("password").addEventListener("input", function() {
+        const strength = document.getElementById("strength");
+        const val = this.value;
+
+        if (val.length < 6) {
+            strength.innerText = "Senha fraca";
+            strength.style.color = "red";
+        } else if (val.length < 10) {
+            strength.innerText = "Senha média";
+            strength.style.color = "orange";
+        } else {
+            strength.innerText = "Senha forte";
+            strength.style.color = "green";
+        }
+    });
+</script>
+
+</body>
+</html>
